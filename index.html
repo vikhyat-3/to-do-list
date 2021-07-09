@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark " id="navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" align="right">
+            <a class="nav-item nav-link" href="#" id="home">Home 
+            <a class="nav-item nav-link" id="instructions">Instructions</a>
+            <a class="nav-item nav-link" id="about">About Us</a>
+        </div>
+        </div> 
+            <div class="social text-gray">
+                <a href="https://www.twitter.com" class='twitter'><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class='linkedin'><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com" class='Facebook'><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com" class='Youtube'><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <label for="task_name" id="label_task">Enter Task:</label> 
+        <input id="task_name" name="task" type="text"><br>
+        <label for="task_priority" id="label_priority">Enter Priority:</label>
+        <select id="task_priority" name="priority" defa>
+            <option value="Low">Low</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="High">High</option>
+        </select><br>
+        <button type="button" id="save" class="btn btn-success">Save Changes</button>
+        <button type="button" id="reset" class="btn btn-danger">Reset</button>
+    </div>
+    <div align="center" id="filter">
+        <button type="button" id="Low" class="btn btn-success" onclick="showPriorityList(this.id)">Show low priority tasks</button>
+        <button type="button" id="Medium" class="btn btn-warning" onclick="showPriorityList(this.id)">Show medium priority tasks</button>
+        <button type="button" id="High" class="btn btn-danger" onclick="showPriorityList(this.id)">Show high priority tasks</button>
+        <button type="button" id="All" class="btn btn-primary" onclick="showPriorityList(this.id)">Show all tasks</button>
+    </div>
+    <div class="table" id="table"> 
+            <div class="row">
+                <div class='col' id="task_tab">Task</div>
+                <div class='col' id="priority_tab">Priority</div>
+            </div>
+    </div>
+    <div class="footer" align="center">
+        <p style="color: white;">Copyrights &copy; 2021 All rights are reserved</p>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
