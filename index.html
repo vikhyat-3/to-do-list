@@ -20,8 +20,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav" align="right">
             <a class="nav-item nav-link" href="#" id="home">Home 
-            <a class="nav-item nav-link" id="instructions">Instructions</a>
-            <a class="nav-item nav-link" id="about">About Us</a>
+            <a class="nav-item nav-link" id="instructions" onclick="displayInstructions()">Instructions</a>
+            <a class="nav-item nav-link" id="about" onclick="displayAboutUs()">About Us</a>
         </div>
         </div> 
             <div class="social text-gray">
@@ -33,7 +33,7 @@
         </div>
     </nav>
     <div class="container">
-        <label for="task_name" id="label_task">Enter Task:</label> 
+        <label for="task_name" id="label_task" align="left">Enter Task:</label> 
         <input id="task_name" name="task" type="text"><br>
         <label for="task_priority" id="label_priority">Enter Priority:</label>
         <select id="task_priority" name="priority" defa>
@@ -44,22 +44,24 @@
         <button type="button" id="save" class="btn btn-success">Save Changes</button>
         <button type="button" id="reset" class="btn btn-danger">Reset</button>
     </div>
-    <div align="center" id="filter">
-        <button type="button" id="Low" class="btn btn-success" onclick="showPriorityList(this.id)">Show low priority tasks</button>
-        <button type="button" id="Medium" class="btn btn-warning" onclick="showPriorityList(this.id)">Show medium priority tasks</button>
-        <button type="button" id="High" class="btn btn-danger" onclick="showPriorityList(this.id)">Show high priority tasks</button>
-        <button type="button" id="All" class="btn btn-primary" onclick="showPriorityList(this.id)">Show all tasks</button>
-    </div>
+    
     <div class="table" id="table"> 
             <div class="row">
                 <div class='col' id="task_tab">Task</div>
                 <div class='col' id="priority_tab">Priority</div>
             </div>
     </div>
-    <div class="footer" align="center">
-        <p style="color: white;">Copyrights &copy; 2021 All rights are reserved</p>
-        
+    <div align="center" id="filter">
+        <button type="button" id="Low" class="btn btn-success" onclick="showPriorityList(this.id)">Show low priority tasks</button>
+        <button type="button" id="Medium" class="btn btn-warning" onclick="showPriorityList(this.id)">Show medium priority tasks</button>
+        <button type="button" id="High" class="btn btn-danger" onclick="showPriorityList(this.id)">Show high priority tasks</button>
+        <button type="button" id="All" class="btn btn-primary" onclick="showPriorityList(this.id)">Show all tasks</button>
     </div>
+    <footer id="footer">
+        <div class="footer-copyright text-center py-3"align="center">
+          &copy;Copyrights 2021 All Rights Reserved
+        </div>
+    </footer> 
 
     <script src="app.js"></script>
 </body>
