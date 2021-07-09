@@ -26,10 +26,12 @@ body {
     width: 10em;
     color: rgb(19, 20, 73);
     text-align: left;
-    margin-left: 1em;
+    margin-left: 0;
+    margin-top: 1em;
 }
 #reset, #save{
     margin-top: 1em;
+    margin-left: 0.5em;
 }
 #save{
     margin-left:2.6em;
@@ -49,6 +51,7 @@ body {
     text-align: center;
     width:80%;
     margin: auto;
+    min-height:12em;
 }
 .row{
     border-top: 0;
@@ -67,6 +70,7 @@ body {
     word-wrap: break-word;
 }
 #filter{
+    margin-top: 2em;
     margin-bottom:1em; 
 }
 #filter .btn{
@@ -93,16 +97,16 @@ body {
     align-items: center;
     border-radius: 0 1em 0 0;
 }
-.footer {
-    position :fixed;
-    left:0;
+ #footer {
+    position: static;
     bottom: 0;
+    margin-top:1.4 em;
     width:100%;
-    background-color: black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.658);
     text-align: center;
     font-size: larger;
-}
-.footer:hover {
-    background-color: rgb(38, 6, 68);;
-
-}
+} 
+ #footer:hover {
+    background-color: rgb(38, 6, 68);
+ }
