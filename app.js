@@ -90,4 +90,13 @@ saveButton.addEventListener('click', function (event) {
   function insertIntoTable(newRow){//used to insert a row div into the table div.
     table_info.append(newRow);
   }
-  
+  function displayInstructions()
+  {
+    let a="This is a todo list."+"\nYou can enter tasks and their priority and display it based on priority levels.";
+    alert(a);
+  }
+  function displayAboutUs()
+  {
+    let a="This website was designed as a part of Verzeo Major Project 2021.\n©Copyrights 2021 All Rights Reserved";
+    alert(a);
+  }
