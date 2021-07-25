@@ -97,6 +97,6 @@ saveButton.addEventListener('click', function (event) {
   }
   function displayAboutUs()
   {
-    let a="This website was designed as a part of Verzeo Major Project 2021.\n©Copyrights 2021 All Rights Reserved";
+    let a="This website was designed as a part of Major Project 2021.\n©Copyrights 2021 All Rights Reserved";
     alert(a);
   }
